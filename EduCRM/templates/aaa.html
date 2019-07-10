@@ -1,0 +1,133 @@
+{% extends 'sadmin/user/sadmin/index.html' %}
+
+{% block content %}
+  <div class="row">
+
+				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+					<div class="info-box red-bg">
+						<i class="fa fa-thumbs-o-up"></i>
+						<div class="count">学生</div>
+						<div class="title">1人</div>
+					</div><!--/.info-box-->
+				</div><!--/.col-->
+
+				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+					<div class="info-box green-bg">
+						<i class="fa fa-thumbs-o-up"></i>
+						<div class="count">老师</div>
+						<div class="title">1人</div>
+					</div><!--/.info-box-->
+				</div><!--/.col-->
+
+				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+					<div class="info-box blue-bg">
+						<i class="fa fa-thumbs-o-up"></i>
+						<div class="count">家长</div>
+						<div class="title">0人</div>
+					</div><!--/.info-box-->
+				</div><!--/.col-->
+
+				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+					<div class="info-box magenta-bg">
+						<i class="fa fa-thumbs-o-up"></i>
+						<div class="count">主任</div>
+						<div class="title">1人</div>
+					</div><!--/.info-box-->
+				</div><!--/.col-->
+
+			</div><!--/.row-->
+
+
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+						<div class="panel-heading">
+							<h2><i class="fa fa-table red"></i><span class="break"></span><strong>用户</strong></h2>
+							<div class="panel-actions">
+								<a href="table.html#" class="btn-setting"><i class="fa fa-rotate-right"></i></a>
+								<a href="table.html#" class="btn-minimize"><i class="fa fa-chevron-up"></i></a>
+								<a href="table.html#" class="btn-close"><i class="fa fa-times"></i></a>
+							</div>
+						</div>
+
+                        <div class="panel-body" style="display: block;">
+                            <table class="table table-hover" align="center">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            #
+                                        </th>
+                                        <th>姓名</th>
+                                        <th>性别</th>
+                                        <th>身份证号</th>
+                                        <th>所属方向</th>
+                                        <th>职位及身份</th>
+										<th>操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            1
+                                        </td>
+                                        <td>张兴亚</td>
+                                        <td>男</td>
+                                        <td>111111111111111111</td>
+                                        <td>人工智能</td>
+                                        <td>管理员</td>
+										<td>
+											<input type="button" class="btn btn-success button-next" name="next" value="编辑">&nbsp;&nbsp;
+                                            <input type="button" class="btn btn-success button-next" name="next" value="删除">
+										</td>
+                                    </tr>
+                                     <tr>
+                                        <td>
+                                            2
+                                        </td>
+                                        <td>王垣皓</td>
+                                        <td>男</td>
+                                         <td>111111111111111111</td>
+                                        <td>人工智能</td>
+                                        <td>方向主任</td>
+										<td>
+											<input type="button" class="btn btn-success button-next " name="next" value="编辑">&nbsp;&nbsp;
+                                            <input type="button" class="btn btn-success button-next " name="next" value="删除">
+										</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            3
+                                        </td>
+                                        <td>张傲</td>
+                                        <td>女</td>
+                                        <td>111111111111111111</td>
+                                        <td>人工智能</td>
+                                        <td>学生</td>
+										<td>
+											<input type="button" class="btn btn-success button-next " name="next" value="编辑">&nbsp;&nbsp;
+                                            <input type="button" class="btn btn-success button-next " name="next" value="删除">
+										</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            4
+                                        </td>
+                                        <td>张宇</td>
+                                        <td>男</td>
+                                        <td>111111111111111111</td>
+                                        <td>人工智能</td>
+                                        <td>老师</td>
+										<td>
+											<input type="button" class="btn btn-success button-next " name="next" value="编辑">&nbsp;&nbsp;
+                                            <input type="button" class="btn btn-success button-next " name="next" value="删除">
+										</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+				</div>
+
+			</div><!--/row-->
+{% endblock %}
