@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8340068-cc81-4e5f-abb0-778e80c8fc2b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/course.html" afterPath="$PROJECT_DIR$/templates/course.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/distribution.html" afterPath="$PROJECT_DIR$/templates/distribution.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/integral.html" afterPath="$PROJECT_DIR$/templates/integral.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/integral_shop.html" afterPath="$PROJECT_DIR$/templates/integral_shop.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/multiple.html" afterPath="$PROJECT_DIR$/templates/multiple.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/news_communication.html" afterPath="$PROJECT_DIR$/templates/news_communication.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/news_release.html" afterPath="$PROJECT_DIR$/templates/news_release.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/parents.html" afterPath="$PROJECT_DIR$/templates/parents.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/result.html" afterPath="$PROJECT_DIR$/templates/result.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/result_query.html" afterPath="$PROJECT_DIR$/templates/result_query.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/student.html" afterPath="$PROJECT_DIR$/templates/student.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/work.html" afterPath="$PROJECT_DIR$/templates/work.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -51,8 +40,8 @@
       <file leaf-file-name="parents.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/parents.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="80" column="33" lean-forward="false" selection-start-line="80" selection-start-column="33" selection-end-line="80" selection-end-column="33" />
+            <state relative-caret-position="220">
+              <caret line="174" column="20" lean-forward="false" selection-start-line="174" selection-start-column="20" selection-end-line="174" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -177,11 +166,11 @@
         <option value="$PROJECT_DIR$/templates/multiple.html" />
         <option value="$PROJECT_DIR$/templates/news_communication.html" />
         <option value="$PROJECT_DIR$/templates/news_release.html" />
-        <option value="$PROJECT_DIR$/templates/parents.html" />
         <option value="$PROJECT_DIR$/templates/result.html" />
         <option value="$PROJECT_DIR$/templates/result_query.html" />
         <option value="$PROJECT_DIR$/templates/student.html" />
         <option value="$PROJECT_DIR$/templates/work.html" />
+        <option value="$PROJECT_DIR$/templates/parents.html" />
       </list>
     </option>
   </component>
@@ -598,7 +587,7 @@
     <option name="totallyTimeSpent" value="1335000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -997,8 +986,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/parents.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="80" column="33" lean-forward="false" selection-start-line="80" selection-start-column="33" selection-end-line="80" selection-end-column="33" />
+        <state relative-caret-position="220">
+          <caret line="174" column="20" lean-forward="false" selection-start-line="174" selection-start-column="20" selection-end-line="174" selection-end-column="20" />
           <folding />
         </state>
       </provider>
