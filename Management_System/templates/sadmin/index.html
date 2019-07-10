@@ -15,20 +15,20 @@
 <![endif]-->
 
 		<!-- Fav and touch icons -->
-		<link rel="shortcut icon" href="../static/assets/ico/favicon.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="../../static/assets/ico/favicon.ico" type="image/x-icon" />
 
 	    <!-- Css files -->
-	    <link href="../static/assets/css/bootstrap.min.css" rel="stylesheet">
-		<link href="../static/assets/css/jquery.mmenu.css" rel="stylesheet">
-		<link href="../static/assets/css/font-awesome.min.css" rel="stylesheet">
-		<link href="../static/assets/css/climacons-font.css" rel="stylesheet">
-		<link href="../static/assets/plugins/xcharts/css/xcharts.min.css" rel=" stylesheet">
-		<link href="../static/assets/plugins/fullcalendar/css/fullcalendar.css" rel="stylesheet">
-		<link href="../static/assets/plugins/morris/css/morris.css" rel="stylesheet">
-		<link href="../static/assets/plugins/jquery-ui/css/jquery-ui-1.10.4.min.css" rel="stylesheet">
-		<link href="../static/assets/plugins/jvectormap/css/jquery-jvectormap-1.2.2.css" rel="stylesheet">
-	    <link href="../static/assets/css/style.min.css" rel="stylesheet">
-		<link href="../static/assets/css/add-ons.min.css" rel="stylesheet">
+	    <link href="../../static/assets/css/bootstrap.min.css" rel="stylesheet">
+		<link href="../../static/assets/css/jquery.mmenu.css" rel="stylesheet">
+		<link href="../../static/assets/css/font-awesome.min.css" rel="stylesheet">
+		<link href="../../static/assets/css/climacons-font.css" rel="stylesheet">
+		<link href="../../static/assets/plugins/xcharts/css/xcharts.min.css" rel=" stylesheet">
+		<link href="../../static/assets/plugins/fullcalendar/css/fullcalendar.css" rel="stylesheet">
+		<link href="../../static/assets/plugins/morris/css/morris.css" rel="stylesheet">
+		<link href="../../static/assets/plugins/jquery-ui/css/jquery-ui-1.10.4.min.css" rel="stylesheet">
+		<link href="../../static/assets/plugins/jvectormap/css/jquery-jvectormap-1.2.2.css" rel="stylesheet">
+	    <link href="../../static/assets/css/style.min.css" rel="stylesheet">
+		<link href="../../static/assets/css/add-ons.min.css" rel="stylesheet">
 
 	    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	    <!--[if lt IE 9]>
@@ -48,9 +48,9 @@
 						<li class="dropdown-menu-header">
 							<strong>用户</strong>
 						</li>
-						<li><a href="page-login.html"><i class="fa fa-wrench"></i> 个人中心</a></li>
+						<li><a href="page_login.html"><i class="fa fa-wrench"></i> 个人中心</a></li>
 						<li class="divider"></li>
-						<li><a href="aaa.html"><i class="fa fa-sign-out"></i> 退出</a></li>
+						<li><a href="../aaa.html"><i class="fa fa-sign-out"></i> 退出</a></li>
 	        		</ul>
 	      		</li>
 			</ul>
@@ -66,7 +66,7 @@
 
 				<div class="sidebar-collapse">
 					<div class="sidebar-header t-center">
-                        <span><img class="text-logo" src="../static/assets/img/logo1.png"><i class="fa fa-space-shuttle fa-3x blue"></i></span>
+                        <span><img class="text-logo" src="../../static/assets/img/logo1.png"><i class="fa fa-space-shuttle fa-3x blue"></i></span>
                     </div>
 					<div class="sidebar-menu">
 						<ul class="nav nav-sidebar">
@@ -91,6 +91,7 @@
 							</li>
 							<li><a href="result_query.html"><i class="fa fa-table"></i><span class="text"> 成绩查询</span></a></li>
 							<li><a href="multiple.html"><i class="fa fa-life-bouy"></i><span class="text"> 综合技能报表</span></a></li>
+
 							<li>
 								<a href="#"><i class="fa fa-bolt"></i><span class="text"> 信息模块</span> <span class="fa fa-angle-down pull-right"></span></a>
 								<ul class="nav sub">
@@ -110,10 +111,10 @@
 					</div>
 
 					<ul class="sidebar-terms">
-						<li><a href="aaa.html#">Terms</a></li>
-						<li><a href="aaa.html#">Privacy</a></li>
-						<li><a href="aaa.html#">Help</a></li>
-						<li><a href="aaa.html#">About</a></li>
+						<li><a href="../aaa.html#">Terms</a></li>
+						<li><a href="../aaa.html#">Privacy</a></li>
+						<li><a href="../aaa.html#">Help</a></li>
+						<li><a href="../aaa.html#">About</a></li>
 					</ul>
 
 					<div class="copyright text-center">
@@ -172,7 +173,10 @@
 			<div class="row">
 
                 <div class="col-lg-12">
-                    
+                    <button type="button" class="btn btn-success">导入</button> &nbsp;&nbsp;
+                    <button type="button" class="btn btn-success">导出</button> &nbsp;&nbsp;
+                    <button type="button" class="btn btn-success">添加</button> &nbsp;&nbsp;
+                    &nbsp;
                     <div class="panel panel-default">
 						<div class="panel-heading">
 							<h2><i class="fa fa-table red"></i><span class="break"></span><strong>用户</strong></h2>
@@ -194,7 +198,7 @@
                                         <th>性别</th>
                                         <th>身份证号</th>
                                         <th>所属方向</th>
-
+                                        <th>职位及身份</th>
 										<th>操作</th>
                                     </tr>
                                 </thead>
@@ -207,7 +211,7 @@
                                         <td>男</td>
                                         <td>111111111111111111</td>
                                         <td>人工智能</td>
-
+                                        <td>管理员</td>
 										<td>
 											<input type="button" class="btn btn-success button-next" name="next" value="编辑">&nbsp;&nbsp;
                                             <input type="button" class="btn btn-success button-next" name="next" value="查看详情">
@@ -221,7 +225,7 @@
                                         <td>男</td>
                                          <td>111111111111111111</td>
                                         <td>人工智能</td>
-
+                                        <td>方向主任</td>
 										<td>
 											<input type="button" class="btn btn-success button-next " name="next" value="编辑">&nbsp;&nbsp;
                                             <input type="button" class="btn btn-success button-next " name="next" value="查看详情">
@@ -235,7 +239,7 @@
                                         <td>女</td>
                                         <td>111111111111111111</td>
                                         <td>人工智能</td>
-
+                                        <td>班主任</td>
 										<td>
 											<input type="button" class="btn btn-success button-next " name="next" value="编辑">&nbsp;&nbsp;
                                             <input type="button" class="btn btn-success button-next " name="next" value="查看详情">
@@ -249,7 +253,7 @@
                                         <td>男</td>
                                         <td>111111111111111111</td>
                                         <td>人工智能</td>
-
+                                        <td>讲师</td>
 										<td>
 											<input type="button" class="btn btn-success button-next " name="next" value="编辑">&nbsp;&nbsp;
                                             <input type="button" class="btn btn-success button-next " name="next" value="查看详情">
@@ -311,7 +315,7 @@
 	<!-- start: JavaScript-->
 	<!--[if !IE]>-->
 
-			<script src="../static/assets/js/jquery-2.1.1.min.js"></script>
+			<script src="../../static/assets/js/jquery-2.1.1.min.js"></script>
 
 	<!--<![endif]-->
 
@@ -336,45 +340,45 @@
 		</script>
 
 	<![endif]-->
-	<script src="../static/assets/js/jquery-migrate-1.2.1.min.js"></script>
-	<script src="../static/assets/js/bootstrap.min.js"></script>
+	<script src="../../static/assets/js/jquery-migrate-1.2.1.min.js"></script>
+	<script src="../../static/assets/js/bootstrap.min.js"></script>
 
 
 	<!-- page scripts -->
-	<script src="../static/assets/plugins/jquery-ui/js/jquery-ui-1.10.4.min.js"></script>
-	<script src="../static/assets/plugins/touchpunch/jquery.ui.touch-punch.min.js"></script>
-	<script src="../static/assets/plugins/moment/moment.min.js"></script>
-	<script src="../static/assets/plugins/fullcalendar/js/fullcalendar.min.js"></script>
+	<script src="../../static/assets/plugins/jquery-ui/js/jquery-ui-1.10.4.min.js"></script>
+	<script src="../../static/assets/plugins/touchpunch/jquery.ui.touch-punch.min.js"></script>
+	<script src="../../static/assets/plugins/moment/moment.min.js"></script>
+	<script src="../../static/assets/plugins/fullcalendar/js/fullcalendar.min.js"></script>
 	<!--[if lte IE 8]>
 		<script language="javascript" type="text/javascript" src="assets/plugins/excanvas/excanvas.min.js"></script>
 	<![endif]-->
-	<script src="../static/assets/plugins/flot/jquery.flot.min.js"></script>
-	<script src="../static/assets/plugins/flot/jquery.flot.pie.min.js"></script>
-	<script src="../static/assets/plugins/flot/jquery.flot.stack.min.js"></script>
-	<script src="../static/assets/plugins/flot/jquery.flot.resize.min.js"></script>
-	<script src="../static/assets/plugins/flot/jquery.flot.time.min.js"></script>
-	<script src="../static/assets/plugins/flot/jquery.flot.spline.min.js"></script>
-	<script src="../static/assets/plugins/xcharts/js/xcharts.min.js"></script>
-	<script src="../static/assets/plugins/autosize/jquery.autosize.min.js"></script>
-	<script src="../static/assets/plugins/placeholder/jquery.placeholder.min.js"></script>
-	<script src="../static/assets/plugins/datatables/js/jquery.dataTables.min.js"></script>
-	<script src="../static/assets/plugins/datatables/js/dataTables.bootstrap.min.js"></script>
-	<script src="../static/assets/plugins/raphael/raphael.min.js"></script>
-	<script src="../static/assets/plugins/morris/js/morris.min.js"></script>
-	<script src="../static/assets/plugins/jvectormap/js/jquery-jvectormap-1.2.2.min.js"></script>
-	<script src="../static/assets/plugins/jvectormap/js/jquery-jvectormap-world-mill-en.js"></script>
-	<script src="../static/assets/plugins/jvectormap/js/gdp-data.js"></script>
-	<script src="../static/assets/plugins/gauge/gauge.min.js"></script>
+	<script src="../../static/assets/plugins/flot/jquery.flot.min.js"></script>
+	<script src="../../static/assets/plugins/flot/jquery.flot.pie.min.js"></script>
+	<script src="../../static/assets/plugins/flot/jquery.flot.stack.min.js"></script>
+	<script src="../../static/assets/plugins/flot/jquery.flot.resize.min.js"></script>
+	<script src="../../static/assets/plugins/flot/jquery.flot.time.min.js"></script>
+	<script src="../../static/assets/plugins/flot/jquery.flot.spline.min.js"></script>
+	<script src="../../static/assets/plugins/xcharts/js/xcharts.min.js"></script>
+	<script src="../../static/assets/plugins/autosize/jquery.autosize.min.js"></script>
+	<script src="../../static/assets/plugins/placeholder/jquery.placeholder.min.js"></script>
+	<script src="../../static/assets/plugins/datatables/js/jquery.dataTables.min.js"></script>
+	<script src="../../static/assets/plugins/datatables/js/dataTables.bootstrap.min.js"></script>
+	<script src="../../static/assets/plugins/raphael/raphael.min.js"></script>
+	<script src="../../static/assets/plugins/morris/js/morris.min.js"></script>
+	<script src="../../static/assets/plugins/jvectormap/js/jquery-jvectormap-1.2.2.min.js"></script>
+	<script src="../../static/assets/plugins/jvectormap/js/jquery-jvectormap-world-mill-en.js"></script>
+	<script src="../../static/assets/plugins/jvectormap/js/gdp-data.js"></script>
+	<script src="../../static/assets/plugins/gauge/gauge.min.js"></script>
 
 
 	<!-- theme scripts -->
-	<script src="../static/assets/js/SmoothScroll.js"></script>
-	<script src="../static/assets/js/jquery.mmenu.min.js"></script>
-	<script src="../static/assets/js/core.min.js"></script>
-	<script src="../static/assets/plugins/d3/d3.min.js"></script>
+	<script src="../../static/assets/js/SmoothScroll.js"></script>
+	<script src="../../static/assets/js/jquery.mmenu.min.js"></script>
+	<script src="../../static/assets/js/core.min.js"></script>
+	<script src="../../static/assets/plugins/d3/d3.min.js"></script>
 
 	<!-- inline scripts related to this page -->
-	<script src="../static/assets/js/pages/index.js"></script>
+	<script src="../../static/assets/js/pages/index.js"></script>
 
 	<!-- end: JavaScript-->
 </div>
