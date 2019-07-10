@@ -23,32 +23,38 @@ $(document).ready(function() {
   createCode();
   //测试提交，对接程序删除即可
   $(".submit_btn").click(function(){
-	  location.href="../sadmin/index.html";
+	  location.href="index.html";
 	  });
 });
 </script>
 </head>
 <body>
+<form action="" method="post">
+    {% csrf_token %}
 <dl class="admin_login">
  <dt>
-  <strong>站点后台管理系统</strong>
+  <strong>页面登录</strong>
   <em>Management System</em>
  </dt>
  <dd class="user_icon">
-  <input type="text" placeholder="账号" class="login_txtbx"/>
+  <input name="username" type="text" placeholder="账号" class="login_txtbx"/>
  </dd>
  <dd class="pwd_icon">
-  <input type="password" placeholder="密码" class="login_txtbx"/>
+  <input name="password" type="password" placeholder="密码" class="login_txtbx"/>
  </dd>
 
  <dd>
-  <input type="button" value="立即登录" class="submit_btn"/>
+  <input type="submit" value="立即登录" class="submit_btn"/>
  </dd>
-
+    <center>{{ mes }}</center>
+ </dd>
+    <div align="center">还没有账号,去 <a href="/parents_register/">注册</a></div>
+ <dd>
  <dd>
   <p>© 2015-2016 DeathGhost 版权所有</p>
   <p>陕B2-20080224-1</p>
  </dd>
 </dl>
+    </form>
 </body>
 </html>

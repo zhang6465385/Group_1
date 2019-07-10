@@ -55,13 +55,13 @@
 					
 
 					
-						<form class="form-horizontal login" action="index.html" method="post">
+						<form class="form-horizontal login" action="" method="post">
 						
 							<fieldset class="col-sm-12">
 								<div class="form-group">
 									<div class="controls row">
 										<div class="input-group col-sm-12">	
-											<input type="text" class="form-control" id="username" placeholder="Username or E-mail"/>
+											<input name="username" type="text" class="form-control" id="username" placeholder="username"/>
 											<span class="input-group-addon"><i class="fa fa-user"></i></span>
 										</div>	
 									</div>
@@ -70,23 +70,23 @@
 								<div class="form-group">
 									<div class="controls row">
 										<div class="input-group col-sm-12">	
-											<input type="password" class="form-control" id="password" placeholder="Password"/>
+											<input name="password" type="password" class="form-control" id="password" placeholder="Password"/>
 											<span class="input-group-addon"><i class="fa fa-key"></i></span>
 										</div>	
 									</div>
 								</div>
 
-								<div class="confirm">
-									<input type="checkbox" name="remember"/>
-									<label for="remember">Remember me</label>
-								</div>	
+{#								<div class="confirm">#}
+{#									<input type="checkbox" name="remember"/>#}
+{#									<label for="remember">Remember me</label>#}
+{#								</div>	#}
 
 								<div class="row">
 							
 									<button type="submit" class="btn btn-lg btn-primary col-xs-12">Login</button>
 							
 								</div>
-								
+								{{ mes }}
 							</fieldset>	
 
 						</form>
@@ -102,75 +102,24 @@
 			
 		</div><!--/row-->		
 	
-		
-		<div id="usage-blank">
-			<ul>
-				<li>
-					<div class="title">Memory</div>
-					<div class="bar">
-						<div class="progress">
-						  	<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%"></div>
-						</div>
-					</div>			
-					<div class="desc">2GB of 8GB</div>
-				</li>
-				<li>
-					<div class="title">HDD</div>
-					<div class="bar">
-						<div class="progress">
-						  	<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-						</div>
-					</div>			
-					<div class="desc">750GB of 1TB</div>
-				</li>
-				<li>
-					<div class="title">SSD</div>
-					<div class="bar">
-						<div class="progress">
-					  		<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%"></div>
-						</div>
-					</div>			
-					<div class="desc">300GB of 1TB</div>
-				</li>
-				<li>
-					<div class="title">Bandwidth</div>
-					<div class="bar">
-						<div class="progress">
-					  		<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
-						</div>
-					</div>			
-					<div class="desc">50TB of 50TB</div>
-				</li>
-			</ul>	
-		</div>			
+
 		
 	</div><!--/container-->
-		
-		
+
 	<!-- start: JavaScript-->
 	<!--[if !IE]>-->
-
 			<script src="/static/assets/js/jquery-2.1.1.min.js"></script>
-
 	<!--<![endif]-->
-
 	<!--[if IE]>
-	
 		<script src="assets/js/jquery-1.11.1.min.js"></script>
-	
 	<![endif]-->
-
 	<!--[if !IE]>-->
-
 		<script type="text/javascript">
 			window.jQuery || document.write("<script src='assets/js/jquery-2.1.1.min.js'>"+"<"+"/script>");
 		</script>
-
 	<!--<![endif]-->
-
 	<!--[if IE]>
-	
-		<script type="text/javascript">
+	    <script type="text/javascript">
 	 	window.jQuery || document.write("<script src='assets/js/jquery-1.11.1.min.js'>"+"<"+"/script>");
 		</script>
 		

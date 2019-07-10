@@ -175,7 +175,7 @@
                 <div class="col-lg-12">
                     <button type="button" class="btn btn-success">导入</button> &nbsp;&nbsp;
                     <button type="button" class="btn btn-success">导出</button> &nbsp;&nbsp;
-                    <button type="button" class="btn btn-success">添加</button> &nbsp;&nbsp;
+                    <button type="button" class="btn btn-success"><a href="edit/add_teacher.html">添加</a></button> &nbsp;&nbsp;
                     &nbsp;
                     <div class="panel panel-default">
 						<div class="panel-heading">
@@ -203,62 +203,22 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                {% for teacher in teachers %}
                                     <tr>
                                         <td>
-                                            1
+                                            {{ teacher.work_number }}
                                         </td>
-                                        <td>张兴亚</td>
-                                        <td>男</td>
-                                        <td>111111111111111111</td>
-                                        <td>人工智能</td>
-                                        <td>管理员</td>
+                                        <td>{{ teacher.teacher_name }}</td>
+                                        <td>{{ teacher.gender }}</td>
+                                        <td>{{ teacher.id_card }}</td>
+                                        <td>{{ teacher.professional.professional_name}}</td>
+                                        <td>{{ teacher.position }}</td>
 										<td>
-											<input type="button" class="btn btn-success button-next" name="next" value="编辑">&nbsp;&nbsp;
-                                            <input type="button" class="btn btn-success button-next" name="next" value="查看详情">
+                                            <a href="edit/edit_teacher.html"><input type="button" class="btn btn-success button-next" name="next" value="编辑"></a>
+                                            <a href="edit/teacher_detail.html"><input type="button" class="btn btn-success button-next" name="next" value="查看详情"></a>
 										</td>
                                     </tr>
-                                     <tr>
-                                        <td>
-                                            2
-                                        </td>
-                                        <td>王垣皓</td>
-                                        <td>男</td>
-                                         <td>111111111111111111</td>
-                                        <td>人工智能</td>
-                                        <td>方向主任</td>
-										<td>
-											<input type="button" class="btn btn-success button-next " name="next" value="编辑">&nbsp;&nbsp;
-                                            <input type="button" class="btn btn-success button-next " name="next" value="查看详情">
-										</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            3
-                                        </td>
-                                        <td>张傲</td>
-                                        <td>女</td>
-                                        <td>111111111111111111</td>
-                                        <td>人工智能</td>
-                                        <td>班主任</td>
-										<td>
-											<input type="button" class="btn btn-success button-next " name="next" value="编辑">&nbsp;&nbsp;
-                                            <input type="button" class="btn btn-success button-next " name="next" value="查看详情">
-										</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            4
-                                        </td>
-                                        <td>张宇</td>
-                                        <td>男</td>
-                                        <td>111111111111111111</td>
-                                        <td>人工智能</td>
-                                        <td>讲师</td>
-										<td>
-											<input type="button" class="btn btn-success button-next " name="next" value="编辑">&nbsp;&nbsp;
-                                            <input type="button" class="btn btn-success button-next " name="next" value="查看详情">
-										</td>
-                                    </tr>
+                                {% endfor %}
                                 </tbody>
                             </table>
                             <ul class="pagination">

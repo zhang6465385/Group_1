@@ -23,35 +23,39 @@ $(document).ready(function() {
   createCode();
   //测试提交，对接程序删除即可
   $(".submit_btn").click(function(){
-	  location.href="../sadmin/index.html";
+	  location.href="index.html";
 	  });
 });
 </script>
 </head>
-<body>
+
+<form action="" method="post">
 <dl class="admin_login">
  <dt>
-  <strong>站点后台管理系统</strong>
+  <strong>页面注册</strong>
   <em>Management System</em>
  </dt>
  <dd class="user_icon">
-  <input type="text" placeholder="账号" class="login_txtbx"/>
+  <input name="username" type="text" placeholder="账号" class="login_txtbx"/>
  </dd>
  <dd class="pwd_icon">
-  <input type="password" placeholder="密码" class="login_txtbx"/>
+  <input name="password" type="password" placeholder="密码" class="login_txtbx"/>
  </dd>
     <dd class="pwd_icon">
-  <input type="password" placeholder="确认密码" class="login_txtbx"/>
+  <input name="confirm_Password" type="password" placeholder="确认密码" class="login_txtbx"/>
  </dd>
 
  <dd>
-  <input type="button" value="立即注册" class="submit_btn"/>
+  <input type="submit" value="立即注册" class="submit_btn">
  </dd>
-    <div align="center">已经有账号了，去 <a href="login.html">登录</a></div>
- <dd>
+    <center>{{ mes }}</center>
+    <div align="center">如果已经有账号了，去 <a href="/parents_login/">登录</a></div>
+    <dd>
   <p>© 2015-2016 DeathGhost 版权所有</p>
   <p>陕B2-20080224-1</p>
  </dd>
 </dl>
+</form>
 </body>
+
 </html>
