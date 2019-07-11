@@ -54,3 +54,6 @@ class Parents_Login(View):
         else:
             mes = "信息不全"
         return render(request,"user/login.html",locals())
+
+def hehe(request):
+    return render(request,'sadmin/integral_shop.html')

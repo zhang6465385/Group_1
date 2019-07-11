@@ -21,5 +21,6 @@ urlpatterns = [
     path('sadmin/', sadmin.index),
     path('parents_register/', views.Parents_Register.as_view()),
     path('parents_login/', views.Parents_Login.as_view()),
-    path('sadmin/teacher_login/', sadmin.Teacher_Login.as_view())
+    path('sadmin/teacher_login/', sadmin.Teacher_Login.as_view()),
+    path('', views.hehe)
 ]

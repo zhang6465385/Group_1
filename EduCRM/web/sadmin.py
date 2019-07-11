@@ -18,7 +18,7 @@ class Teacher_Login(View):
         username = request.POST.get("username")
         password = request.POST.get("password")
         if all([username, password]):
-            u = Teacher.objects.filter(username=username).first()
+            u = Teacher.objects.filter(work_number=username).first()
             if u:
                 if password == u.password:
                     request.session["username"] = username

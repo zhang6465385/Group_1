@@ -193,69 +193,29 @@
                                         </th>
                                         <th>姓名</th>
                                         <th>性别</th>
+                                        <th>年龄</th>
                                         <th>身份证号</th>
                                         <th>所属方向</th>
-                                        <th>状态</th>
+                                        <th>阶段</th>
 										<th>操作</th>
                                     </tr>
                                 </thead>
                                 <tbody>
+								{% for i in all %}
                                     <tr>
-                                        <td>
-                                            1
-                                        </td>
-                                        <td>张兴亚</td>
-                                        <td>男</td>
-                                        <td>111111111111111111</td>
-                                        <td>人工智能</td>
-                                        <td>在籍</td>
+                                        <td>{{i.id}}</td>
+                                        <td>{{i.name}}</td>
+                                        <td>{{i.sex}}</td>
+                                        <td>{{i.age}}</td>
+                                        <td>{{i.IDcard}}</td>
+                                        <td>{{i.major}}</td>
+                                        <td>{{i.stage}}</td>
 										<td>
                                             <a href="edit/edit_stu.html"><input type="button" class="btn btn-success button-next" name="next" value="编辑"></a>
                                             <a href="edit/stu_detail.html"><input type="button" class="btn btn-success button-next" name="next" value="查看详情"></a>
 										</td>
                                     </tr>
-                                     <tr>
-                                        <td>
-                                            2
-                                        </td>
-                                        <td>王垣皓</td>
-                                        <td>男</td>
-                                         <td>111111111111111111</td>
-                                        <td>人工智能</td>
-                                        <td>实训</td>
-										<td>
-                                            <a href="edit/edit_stu.html"><input type="button" class="btn btn-success button-next" name="next" value="编辑"></a>
-                                            <a href="edit/stu_detail.html"><input type="button" class="btn btn-success button-next" name="next" value="查看详情"></a>
-										</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            3
-                                        </td>
-                                        <td>张傲</td>
-                                        <td>女</td>
-                                        <td>111111111111111111</td>
-                                        <td>人工智能</td>
-                                        <td>退学</td>
-										<td>
-                                            <a href="edit/edit_stu.html"><input type="button" class="btn btn-success button-next" name="next" value="编辑"></a>
-                                            <a href="edit/stu_detail.html"><input type="button" class="btn btn-success button-next" name="next" value="查看详情"></a>
-										</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            4
-                                        </td>
-                                        <td>张宇</td>
-                                        <td>男</td>
-                                        <td>111111111111111111</td>
-                                        <td>人工智能</td>
-                                        <td>离校</td>
-										<td>
-                                            <a href="edit/edit_stu.html"><input type="button" class="btn btn-success button-next" name="next" value="编辑"></a>
-                                            <a href="edit/stu_detail.html"><input type="button" class="btn btn-success button-next" name="next" value="查看详情"></a>
-										</td>
-                                    </tr>
+								{% endfor %}
                                 </tbody>
                             </table>
                             <ul class="pagination">
