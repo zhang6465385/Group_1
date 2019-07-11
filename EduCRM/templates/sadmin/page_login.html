@@ -58,12 +58,18 @@
 						<form class="form-horizontal login" action="" method="post">
 						
 							<fieldset class="col-sm-12">
+
 								<div class="form-group">
 									<div class="controls row">
-										<div class="input-group col-sm-12">	
-											<input name="username" type="text" class="form-control" id="username" placeholder="username"/>
+										<div class="input-group col-sm-12">
+											<input name="work_number" type="text" class="form-control" id="username" placeholder="work_number"/>
 											<span class="input-group-addon"><i class="fa fa-user"></i></span>
-										</div>	
+                                            <span>
+                                            {% if error_data.work_number.error%}
+                                            <center><p style="color: red;"><font size="4">{{ error_data.work_number.error }}</font></p></center>
+                                                {% endif %}
+                                              </span>
+										</div>
 									</div>
 								</div>
 							
@@ -72,9 +78,15 @@
 										<div class="input-group col-sm-12">	
 											<input name="password" type="password" class="form-control" id="password" placeholder="Password"/>
 											<span class="input-group-addon"><i class="fa fa-key"></i></span>
-										</div>	
+                                            <span>
+                                                {% if error_data.password.error%}
+                                           <center><p style="color: red;"><font size="4">{{ error_data.password.error }}</font></p></center>
+                                        {% endif %}
+                                      </span>
+										</div>
 									</div>
 								</div>
+
 
 {#								<div class="confirm">#}
 {#									<input type="checkbox" name="remember"/>#}

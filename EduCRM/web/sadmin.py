@@ -1,35 +1,37 @@
 from django.shortcuts import render,redirect
-from django.views import View
 # from django.contrib.auth.hashers import make_password,check_password
 # Create your views here.
 from web.models import *
 import re
 def index(request):
-    user_id = request.session.get('user_id')
+    user_id = request.session.get('t_id')
     if not user_id:
         return redirect('/sadmin/teacher_login/')
     return render(request,'sadmin/index.html')
 
 # 老师登陆
-class Teacher_Login(View):
-    def get(self,request):
+
+def Teacher_Login(request):
+    if request.method == "GET":
         return render(request,"sadmin/page_login.html")
-    def post(self,request):
-        username = request.POST.get("username")
+    if request.method == "POST":
+        error_data = {}
+        work_number = request.POST.get("work_number")
         password = request.POST.get("password")
-        if all([username, password]):
-            u = Teacher.objects.filter(work_number=username).first()
+        if not all([ password,work_number]):
+            if not password:
+                error_data["password"] = {"error":"密码为空"}
+            if not work_number:
+                error_data["work_number"] = {"error":"学号为空"}
+            return render(request,"sadmin/page_login.html",locals())
+        else:
+            u = Teacher.objects.filter(work_number=work_number).first()
             if u:
                 if password == u.password:
-                    request.session["username"] = username
-                    request.session["user_id"] = u.id
-                    # mes = "登录成功"
-                    # mes = "登录成功"
-                    return redirect('/')
+                    request.session["t_id"] = u.id
+                    return redirect("/index/")
                 else:
-                    mes = "密码不正确"
+                    error_data["password"] = {"error":"密码错误"}
             else:
-                mes = "账号不存在"
-        else:
-            mes = "信息不全"
-        return render(request, "sadmin/page_login.html", locals())
+                error_data["work_number"] = {"error": "此学号未存在"}
+        return render(request,"sadmin/page_login.html",locals())

@@ -37,16 +37,24 @@ $(document).ready(function() {
   <em>Management System</em>
  </dt>
  <dd class="user_icon">
-  <input name="username" type="text" placeholder="账号" class="login_txtbx"/>
+  <input name="user_name" type="text" placeholder="账号" class="login_txtbx"/>
  </dd>
- <dd class="pwd_icon">
+       <span>
+        {% if error_data.user_name.error%}
+       <center><p style="color: yellow;"><font size="5">{{ error_data.user_name.error }}</font></p></center>
+    {% endif %}
+  </span>
   <input name="password" type="password" placeholder="密码" class="login_txtbx"/>
  </dd>
-
+   <span>
+        {% if error_data.password.error%}
+       <center><p style="color: yellow;"><font size="5">{{ error_data.password.error }}</font></p></center>
+    {% endif %}
+  </span>
  <dd>
   <input type="submit" value="立即登录" class="submit_btn"/>
  </dd>
-    <center>{{ mes }}</center>
+     <p style="color: yellow" ><h1><center>{{ mes }}</center></h1></p>
  </dd>
     <div align="center">还没有账号,去 <a href="/parents_register/">注册</a></div>
  <dd>
@@ -58,3 +66,5 @@ $(document).ready(function() {
     </form>
 </body>
 </html>
+
+ <dd class="pwd_icon">

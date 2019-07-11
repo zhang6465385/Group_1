@@ -18,9 +18,10 @@ from django.urls import path
 from web import views,sadmin
 
 urlpatterns = [
-    path('sadmin/', sadmin.index),
-    path('parents_register/', views.Parents_Register.as_view()),
-    path('parents_login/', views.Parents_Login.as_view()),
-    path('sadmin/teacher_login/', sadmin.Teacher_Login.as_view()),
-    path('', views.hehe)
+    path('index/', sadmin.index),
+    path('parents_register/', views.Parents_Register),
+    path('parents_login/', views.Parents_Login),
+    path('sadmin/teacher_login/', sadmin.Teacher_Login),
+    path('object/', views.Object),
+    path('logout/', views.logout)
 ]

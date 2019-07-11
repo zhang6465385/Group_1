@@ -36,21 +36,53 @@ $(document).ready(function() {
   <em>Management System</em>
  </dt>
  <dd class="user_icon">
-  <input name="username" type="text" placeholder="账号" class="login_txtbx"/>
+  <input name="parents_name" type="text" placeholder="姓名 : 需要中文6位以下组成"  class="login_txtbx"/>
  </dd>
+   <span>
+        {% if error_data.parents_name.error%}
+       <center><p style="color: yellow;"><font size="5">{{ error_data.parents_name.error }}</font></p></center>
+    {% endif %}
+  </span>
+ <dd class="user_icon">
+  <input name="user_name" type="text" placeholder="用户名 : 字母开头 6-12位" class="login_txtbx"/>
+ </dd>
+   <span>
+        {% if error_data.user_name.error %}
+       <center><p style="color: yellow;"><font size="5">{{ error_data.user_name.error }}</font></p></center>
+    {% endif %}
+  </span>
  <dd class="pwd_icon">
-  <input name="password" type="password" placeholder="密码" class="login_txtbx"/>
+  <input name="password" type="password" placeholder="密码 : 需要大写字母开头字8-10位" class="login_txtbx"/>
  </dd>
+<span>
+    {% if error_data.password.error%}
+   <center><p style="color: yellow;"><font size="5">{{ error_data.password.error }}</font></p></center>
+{% endif %}
+</span>
+ <dd class="pwd_icon">
+  <input name="confirm_password" type="password" placeholder="确认密码" class="login_txtbx"/>
+ </dd>
+<span>
+    {% if error_data.confirm_password.error%}
+   <center><p style="color: yellow;"><font size="5">{{ error_data.confirm_password.error }}</font></p></center>
+{% endif %}
+</span>
     <dd class="pwd_icon">
-  <input name="confirm_Password" type="password" placeholder="确认密码" class="login_txtbx"/>
+  <input name="id_card" type="text" placeholder="请输入身份证号 : 看仔细点输入18位" class="login_txtbx"/>
  </dd>
+   <span>
+        {% if error_data.id_card.error%}
+       <center><p style="color: yellow;"><font size="5">{{ error_data.id_card.error }}</font></p></center>
+    {% endif %}
+  </span>
 
  <dd>
   <input type="submit" value="立即注册" class="submit_btn">
  </dd>
-    <center>{{ mes }}</center>
+
     <div align="center">如果已经有账号了，去 <a href="/parents_login/">登录</a></div>
     <dd>
+     <p style="color: yellow" >{{ mes }}</p>
   <p>© 2015-2016 DeathGhost 版权所有</p>
   <p>陕B2-20080224-1</p>
  </dd>
